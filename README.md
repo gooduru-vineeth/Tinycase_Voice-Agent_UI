@@ -1,111 +1,219 @@
-# Agent Starter for React
+# TinyCase Personal Finance GPT 🚀💰
 
-This is a starter template for [LiveKit Agents](https://docs.livekit.io/agents) that provides a simple voice interface using the [LiveKit JavaScript SDK](https://github.com/livekit/client-sdk-js). It supports [voice](https://docs.livekit.io/agents/start/voice-ai), [transcriptions](https://docs.livekit.io/agents/build/text/), and [virtual avatars](https://docs.livekit.io/agents/integrations/avatar).
+> **Your AI Financial Advisor** - An open-source, high-performance AI chatbot framework specialized for personal finance management.
 
-Also available for:
-[Android](https://github.com/livekit-examples/agent-starter-android) • [Flutter](https://github.com/livekit-examples/agent-starter-flutter) • [Swift](https://github.com/livekit-examples/agent-starter-swift) • [React Native](https://github.com/livekit-examples/agent-starter-react-native)
+A Next.js frontend for an intelligent AI financial advisor built on LiveKit's powerful real-time infrastructure. This application provides comprehensive financial guidance through voice, chat, and video interactions, making professional-grade financial advice accessible to everyone.
 
-<picture>
-  <source srcset="./.github/assets/readme-hero-dark.webp" media="(prefers-color-scheme: dark)">
-  <source srcset="./.github/assets/readme-hero-light.webp" media="(prefers-color-scheme: light)">
-  <img src="./.github/assets/readme-hero-light.webp" alt="App screenshot">
-</picture>
+## 🎯 Features
 
-### Features:
+- **🗣️ Voice-First Financial Consultation** - Natural conversation-based financial advisory
+- **💬 Interactive Chat Interface** - Text-based financial planning and Q&A
+- **📹 Video Conferencing** - Face-to-face financial consultations
+- **📊 Real-time Data Analysis** - Live financial portfolio analysis and recommendations
+- **🌐 Multi-language Support** - English, Hindi, Kannada, Telugu, Tamil, Marathi
+- **📱 Responsive Design** - Works seamlessly across all devices
+- **🎨 Modern UI/UX** - Built with Tailwind CSS and Radix UI components
 
-- Real-time voice interaction with LiveKit Agents
-- Camera video streaming support
-- Screen sharing capabilities
-- Audio visualization and level monitoring
-- Virtual avatar integration
-- Light/dark theme switching with system preference detection
-- Customizable branding, colors, and UI text via configuration
+## 📋 Prerequisites
 
-This template is built with Next.js and is free for you to use or modify as you see fit.
+- **Node.js** 18.0 or higher
+- **pnpm** package manager
+- **LiveKit** account and credentials
+- **Git** for version control
 
-### Project structure
+## 🚀 Quick Start
 
-```
-agent-starter-react/
-├── app/
-│   ├── (app)/
-│   ├── api/
-│   ├── components/
-│   ├── fonts/
-│   ├── globals.css
-│   └── layout.tsx
-├── components/
-│   ├── livekit/
-│   ├── ui/
-│   ├── app.tsx
-│   ├── session-view.tsx
-│   └── welcome.tsx
-├── hooks/
-├── lib/
-├── public/
-└── package.json
-```
-
-## Getting started
-
-> [!TIP]
-> If you'd like to try this application without modification, you can deploy an instance in just a few clicks with [LiveKit Cloud Sandbox](https://cloud.livekit.io/projects/p_/sandbox/templates/agent-starter-react).
-
-[![Open on LiveKit](https://img.shields.io/badge/Open%20on%20LiveKit%20Cloud-002CF2?style=for-the-badge&logo=external-link)](https://cloud.livekit.io/projects/p_/sandbox/templates/voice-assistant-frontend)
-
-Run the following command to automatically clone this template.
+### 1. Clone the Repository
 
 ```bash
-lk app create --template agent-starter-react
+git clone <repository-url>
+cd agent-starter-react
 ```
 
-Then run the app with:
+### 2. Install Dependencies
 
 ```bash
 pnpm install
-pnpm dev
 ```
 
-And open http://localhost:3000 in your browser.
+### 3. Environment Setup
 
-You'll also need an agent to speak with. Try our [Voice AI Quickstart](https://docs.livekit.io/start/voice-ai) for the easiest way to get started.
-
-## Configuration
-
-This starter is designed to be flexible so you can adapt it to your specific agent use case. You can easily configure it to work with different types of inputs and outputs:
-
-#### Example: App configuration (`app-config.ts`)
-
-```ts
-export const APP_CONFIG_DEFAULTS = {
-  companyName: 'LiveKit',
-  pageTitle: 'LiveKit Voice Agent',
-  pageDescription: 'A voice agent built with LiveKit',
-  supportsChatInput: true,
-  supportsVideoInput: true,
-  supportsScreenShare: true,
-  logo: '/lk-logo.svg',
-  accent: '#002cf2',
-  logoDark: '/lk-logo-dark.svg',
-  accentDark: '#1fd5f9',
-  startButtonText: 'Start call',
-};
-```
-
-You can update these values in [`app-config.ts`](./app-config.ts) to customize branding, features, and UI text for your deployment.
-
-#### Environment Variables
-
-You'll also need to configure your LiveKit credentials in `.env.local` (copy `.env.example` if you don't have one):
+Create a `.env.local` file in the root directory:
 
 ```env
 LIVEKIT_API_KEY=your_livekit_api_key
 LIVEKIT_API_SECRET=your_livekit_api_secret
-LIVEKIT_URL=https://your-livekit-server-url
+LIVEKIT_URL=your_livekit_url
 ```
 
-These are required for the voice agent functionality to work with your LiveKit project.
+### 4. Start Development Server
 
-## Contributing
+```bash
+pnpm dev
+```
 
-This template is open source and we welcome contributions! Please open a PR or issue through GitHub, and don't forget to join us in the [LiveKit Community Slack](https://livekit.io/join-slack)!
+Visit `http://localhost:3000` to start your financial consultation!
+
+## 🤖 AI Agent Prompts
+
+### 💬 Chat Agent Prompt
+
+The comprehensive system prompt for text-based financial advisory interactions.
+
+**📁 Location:** [`prompts/chat_agent_prompt.md`](./prompts/chat_agent_prompt.md)
+
+**Features:**
+
+- Complete financial health analysis framework
+- Visual dashboard generation with charts and graphs
+- Goal-based financial planning
+- Multi-language support
+- Risk assessment and portfolio optimization
+
+### 🎙️ Voice Agent Prompt
+
+Optimized prompt for voice-first financial consultations.
+
+**📁 Location:** [`prompts/voice_agent_prompt.md`](./prompts/voice_agent_prompt.md)
+
+**Features:**
+
+- Voice-optimized communication (no markdown formatting)
+- Natural conversation flow
+- Audio-friendly financial explanations
+- Real-time voice interaction guidelines
+
+## 🏗️ Project Structure
+
+```
+agent-starter-react/
+├── app/                          # Next.js app directory
+│   ├── (app)/                   # Main application routes
+│   ├── api/                     # API endpoints
+│   ├── components/              # App-specific components
+│   └── globals.css             # Global styles
+├── components/                  # Reusable UI components
+│   ├── livekit/                # LiveKit-specific components
+│   ├── ui/                     # UI component library
+│   └── session-view.tsx        # Main session interface
+├── hooks/                       # React custom hooks
+├── lib/                        # Utility functions and types
+├── prompts/                    # AI agent system prompts
+│   ├── chat_agent_prompt.md   # Text-based agent prompt
+│   └── voice_agent_prompt.md  # Voice-based agent prompt
+├── public/                     # Static assets
+└── app-config.ts              # Application configuration
+```
+
+## ⚙️ Configuration
+
+### App Configuration
+
+Edit `app-config.ts` to customize your application:
+
+```typescript
+export const APP_CONFIG_DEFAULTS: AppConfig = {
+  companyName: 'Tinycase',
+  pageTitle: 'Tinycase - Personal Finance GPT',
+  pageDescription: 'Your AI Financial Advisor...',
+  supportsChatInput: true,
+  supportsVideoInput: true,
+  supportsScreenShare: true,
+  // ... more options
+};
+```
+
+### LiveKit Setup
+
+1. Sign up for a [LiveKit account](https://livekit.io/)
+2. Create a new project
+3. Copy your API credentials to `.env.local`
+4. Configure your agent endpoints
+
+## 🛠️ Available Scripts
+
+### Using pnpm (recommended):
+
+```bash
+pnpm dev          # Start development server with Turbopack
+pnpm build        # Build for production
+pnpm start        # Start production server
+pnpm lint         # Run ESLint
+pnpm format       # Format code with Prettier
+pnpm format:check # Check code formatting
+```
+
+### Using Task (if you have `task` installed):
+
+```bash
+task install      # Install dependencies
+task dev          # Start development server
+```
+
+## 💡 Key Features Explained
+
+### Financial Analysis Engine
+
+- **Portfolio Assessment** - Comprehensive analysis of investments, assets, and liabilities
+- **Risk Profiling** - Automated risk tolerance assessment
+- **Goal Planning** - Strategic financial goal setting and tracking
+- **Tax Optimization** - Personalized tax-saving recommendations
+
+### Real-time Interactions
+
+- **Voice Commands** - Natural language processing for voice-based queries
+- **Live Data** - Real-time financial market data integration
+- **Screen Sharing** - Share financial documents and portfolios
+- **Multi-user Sessions** - Family financial planning sessions
+
+### Accessibility & Inclusion
+
+- **Multi-language Support** - Native support for 6+ Indian languages
+- **Financial Literacy Adaptation** - Adjusts complexity based on user knowledge
+- **Visual Accessibility** - Screen reader compatible interface
+- **Mobile Optimization** - Complete mobile financial advisory experience
+
+## 🔧 Development
+
+### Adding New Features
+
+1. **Components** - Add reusable UI components in `components/ui/`
+2. **LiveKit Features** - Extend LiveKit functionality in `components/livekit/`
+3. **API Endpoints** - Create new endpoints in `app/api/`
+4. **Hooks** - Add custom hooks in `hooks/`
+
+### Customizing AI Prompts
+
+1. Edit `prompts/chat_agent_prompt.md` for text-based interactions
+2. Edit `prompts/voice_agent_prompt.md` for voice-based interactions
+3. Restart your agent server to apply changes
+
+## 📚 Documentation & Resources
+
+- [LiveKit Documentation](https://docs.livekit.io/)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [LiveKit React Components](https://github.com/livekit/components-js)
+- [Voice AI Quickstart](https://docs.livekit.io/start/voice-ai)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
+
+## 🆘 Support
+
+- **Issues** - Report bugs and request features via GitHub Issues
+- **Documentation** - Check the `TEMPLATE.md` for additional setup information
+- **Community** - Join the LiveKit community for real-time support
+
+---
+
+**Built with ❤️ by TinyCase**  
+_Democratizing financial advisory through AI technology_
