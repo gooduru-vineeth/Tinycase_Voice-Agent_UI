@@ -39,8 +39,7 @@ export const Welcome = ({
         {startButtonText}
       </Button>
       <p className="text-fg1 m fixed bottom-5 left-1/2 w-full max-w-prose -translate-x-1/2 pt-1 text-xs leading-5 font-normal text-pretty md:text-sm">
-        Your personal AI financial advisor for budgeting, investments, and financial planning
-        .
+        Your personal AI financial advisor for budgeting, investments, and financial planning.
       </p>
     </div>
   );
