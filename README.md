@@ -56,7 +56,7 @@ A Next.js frontend for an intelligent AI financial advisor built on LiveKit's po
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/gooduru-vineeth/Tinycase_Voice-Agent_UI
 cd agent-starter-react
 ```
 
