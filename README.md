@@ -1,6 +1,36 @@
-# TinyCase Personal Finance GPT 🚀💰
+# 🤯 Tinycase - Personal Finance GPT (Voice Agent UI)
 
-> **Your AI Financial Advisor** - An open-source, high-performance AI chatbot framework specialized for personal finance management.
+> Your AI Financial Advisor - An open-source, high-performance AI chatbot framework specialized for personal finance management.
+
+. [**Live Demo**](https://tinycase-financial-gpt.vercel.app)
+· [**Documentation**](./docs)
+· [**Report Bug**][github-issues-link]
+· [**Request Feature**][github-issues-link]
+· [**Voice Agent UI**](https://github.com/gooduru-vineeth/Tinycase_Voice-Agent_UI)
+
+## 🎥 Product Demonstrations
+
+### 🎬 Video Walkthrough
+
+Get a visual overview of Tinycase Personal Finance GPT in action:
+
+- **[📹 Voice Agent Demo](https://drive.google.com/file/d/1lu-yKF6HhuSdOEvX3HekeKELI-sq14t0/view?usp=drive_link)** - Experience hands-free financial conversations with voice interaction
+- **[📺 Chat & Voice Agent Overview](https://drive.google.com/file/d/1HZ0nBh6E_fhtAmdjYlNtLPvT7ldff3qG/view?usp=drive_link)** - Complete demonstration of both chat and voice capabilities
+
+## 🔗 Important Links
+
+### 🚀 Live Applications
+
+- **[💬 Live Chat Demo](https://tinycase-financial-gpt.vercel.app)** - Try the web application
+- **[🗣️ Voice Agent](https://tinycase-financial-gpt.vercel.app/chat)** - Start your voice-enabled financial conversation
+
+### 📂 Source Code & Projects
+
+- **[🏠 Main Repository](https://github.com/gooduru-vineeth/Tinycase_FinancialGPT)** - Complete source code
+- **[🎤 Voice Agent UI](https://github.com/gooduru-vineeth/Tinycase_Voice-Agent_UI)** - Voice interface repository
+- **[📖 Documentation](./docs)** - Technical documentation
+
+---
 
 A Next.js frontend for an intelligent AI financial advisor built on LiveKit's powerful real-time infrastructure. This application provides comprehensive financial guidance through voice, chat, and video interactions, making professional-grade financial advice accessible to everyone.
 
@@ -217,3 +247,5 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 **Built with ❤️ by TinyCase**  
 _Democratizing financial advisory through AI technology_
+
+[github-issues-link]: https://github.com/gooduru-vineeth/Tinycase_FinancialGPT/issues
